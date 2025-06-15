@@ -1,16 +1,113 @@
-* {
-    border: solid black;
+*{
+
+    padding: 0 ;
+    margin: 0;
 }
+
+div {
+    border: solid;
+}
+
+
+.pacifico-Regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  color: #333;
+  font-style: normal;
+  font-size: 25px;
+}
+
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(129, 164, 179);
+    height: calc(60px + 1vh);
 }
+
 
 .logo{
+    text-align: center;
+    margin-left: calc(15px + 3vw);
 
 }
-.dropdown {
-    padding: 20px;
+#menuIcon {
+    text-align: center;
+    padding-right: 15px;
+    margin-right: 20px
+}
+#menuIcon:hover {
+    transform: translateY(-3px)
+}
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;  
+  transition: 1.2s;
+  border-radius: 2px;
+  
+}
+
+.change .bar1 {
+  transform: translate(0, 8px) rotate(405deg);
+  height: 3px;
+  border-radius: 2px;
+}
+.change .bar2 {
+    transform:translate(0, 30px);
+    opacity: 0;
+    
+}
+.change .bar3 {
+  transform: translate(0, -6px) rotate(-405deg);
+  height: 3px;
+  border-radius: 2px;
+} 
+
+.dropDown{
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    padding: 10px;
+    margin-right: 35px;
+    opacity: 1;
+    width: 120px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(129, 164, 179);
+    transform: translateY(0);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    transition-delay: 0.4s;
+}
+
+.dropDown.hidden {
+    opacity: 0;
+    transform: translateY(-40px);
+    pointer-events: none;
+}
+.navBtn {
+    margin: 5px;
+    padding: 2px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(51, 51, 51, 0.8);
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding: 3px;
+}
+.navBtn:hover {
+    background-color: rgb(51, 51, 51, 1);
+    transform: translateY(-3px);
+}
+
+
+#testModeBtn{
+
+}
+#resetBtn{
+
 }
