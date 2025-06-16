@@ -4,10 +4,11 @@
     margin: 0;
 }
 
-div {
-    border: solid;
+main{
+    margin-top: calc(60px + 1vh);
+    height: 100vh;
+    
 }
-
 
 .pacifico-Regular {
   font-family: "Pacifico", cursive;
@@ -17,16 +18,16 @@ div {
   font-size: 25px;
 }
 
-
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(129, 164, 179);
+    position: fixed;
     height: calc(60px + 1vh);
+    width: 100%;
+    top: 0
 }
-
-
 .logo{
     text-align: center;
     margin-left: calc(15px + 3vw);
@@ -72,7 +73,7 @@ header {
     flex-direction: column;
     justify-self: end;
     padding: 10px;
-    margin-right: 35px;
+    right: 20px;
     opacity: 1;
     width: 120px;
     border-bottom-left-radius: 15px;
@@ -81,6 +82,8 @@ header {
     transform: translateY(0);
     transition: opacity 0.4s ease, transform 0.4s ease;
     transition-delay: 0.4s;
+    position: absolute;
+    z-index: 999;
 }
 
 .dropDown.hidden {
@@ -104,10 +107,41 @@ header {
     transform: translateY(-3px);
 }
 
+.howTo {
+    padding-top: 20px;
+    text-align: center;
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: px;
+}
 
-#testModeBtn{
+    
+
+dl {
+    line-height: 24px;
+    font-style: oblique;
+    color: #333;
+    padding-top: calc(10px + 1vh);
 
 }
-#resetBtn{
 
+dd {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-weight: 600;
+    font-size: 16px;
+   
+}
+dt {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.happy-revising {
+    padding-top: 5px;
+    font-weight: 600;
+    
+    
 }
