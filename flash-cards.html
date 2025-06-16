@@ -26,7 +26,7 @@
     <main>
         <div class="howTo">
             <dl class="description">
-                <dd class="">Here's How it works:</dd>
+                <dd>Here's How it works:</dd>
                 <dt>Add Questions or Cues to the front of your flash-card</dt>
                 <dt>Add an Answer or hidden information to the back</dt>
                 <dt>Enter 'Test Mode' from the menu, and quiz yourself</dt>
@@ -34,20 +34,24 @@
                 <dt class="happy-revising">Happy Revising!</dt>
             </dl>
         </div>
-        <div class="input-container">
-            <label for="userQuestion">Enter a question for the front of your flash-card...</label><br>
-            <textarea 
-            id="frontFace" 
-            name="front-text" 
-            rows="4" cols="40"
-            placeholder="Type Here..."></textarea><br>
-            <label for="userAnswer">Provide the answer...</label><br>
-            <textarea 
-            id="backFace" 
-            name="back-text" 
-            rows="4" cols="40"
-            placeholder="Type Here..."></textarea><br>
-            <button id="enterBtn">Make a card</button>
+        <div class="input-section">
+            <div class="input-container">
+                <label class="make-a-card-text">Make a Flash-Card</label><br>
+                <label for="userQuestion">Enter a question for the front of your flash-card...</label><br>
+                <textarea 
+                id="frontFace" 
+                name="front-text" 
+                rows="3" cols="40"
+                placeholder="Type Here..."></textarea><br>
+                <label for="userAnswer">Provide the answer...</label><br>
+                <textarea 
+                id="backFace" 
+                name="back-text" 
+                rows="3" cols="40"
+                placeholder="Type Here..."></textarea><br>
+                <button id="enterBtn">Make a card</button>
+            </div>
+        </div>
     </main>
      
 </body>

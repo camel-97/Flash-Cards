@@ -1,5 +1,4 @@
 *{
-
     padding: 0 ;
     margin: 0;
 }
@@ -7,7 +6,10 @@
 main{
     margin-top: calc(60px + 1vh);
     height: 100vh;
-    
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .pacifico-Regular {
@@ -82,7 +84,7 @@ main{
     transform: translateY(0);
     transition: opacity 0.4s ease, transform 0.4s ease;
     transition-delay: 0.4s;
-    position: absolute;
+    position: fixed;
     z-index: 999;
 }
 
@@ -108,32 +110,28 @@ main{
 }
 
 .howTo {
-    padding-top: 20px;
     text-align: center;
     font-family: "Playwrite DE Grund", cursive;
     font-size: 12px;
     font-weight: 600;
     font-style: normal;
-    letter-spacing: px;
-}
 
-    
+}
 
 dl {
     line-height: 24px;
     font-style: oblique;
     color: #333;
     padding-top: calc(10px + 1vh);
-
 }
 
 dd {
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 5px;
     font-weight: 600;
     font-size: 16px;
-   
 }
+
 dt {
     font-size: 13px;
     font-weight: 500;
@@ -142,6 +140,45 @@ dt {
 .happy-revising {
     padding-top: 5px;
     font-weight: 600;
-    
+}
+
+.input-container {
+    justify-self: center;
+    align-items: center;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    margin-left:  auto;
+    margin-right:  auto;
+    border-radius: 10px;
+    background-color:rgb(129, 164, 179);
+    padding: 5px;   
+}
+
+.input-section {
+    padding-top: calc(10px + 2vh);
+    margin-top: calc(10px + 2vh);
     
 }
+
+textarea {
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 5px;
+    padding: 6px;
+    margin: 0;
+}
+
+.make-a-card-text {
+    padding: 1vh;
+}
+
+label:not(.make-a-card-text) {
+    border: solid;
+    display: block;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
