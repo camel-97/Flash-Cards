@@ -172,13 +172,25 @@ textarea {
 }
 
 .make-a-card-text {
-    padding: 1vh;
+    padding-top: 1vh;
+    font-size: 14px;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 4px;
+}
+#enterBtn {
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+}
+#enterBtn:hover {
+    transform: translateY(-3px);
 }
 
-label:not(.make-a-card-text) {
-    border: solid;
-    display: block;
-    box-sizing: border-box;
-    margin: 0 auto;
-}
+
 
