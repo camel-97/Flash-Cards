@@ -193,4 +193,8 @@ textarea {
 }
 
 
-
+.card-grid-container {
+    margin-top: 40px;
+    border: solid  black;
+    height: 150px
+}
