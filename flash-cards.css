@@ -193,11 +193,11 @@ textarea {
 }
 
 
-.card-grid-container {
+#card-grid-container {
     margin-top: 40px;
     padding-top: 40px;
     padding-bottom: 40px;
-    border: solid  black;
+    background-color: rgb(129, 164, 179);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     padding-left: 100px;
@@ -205,9 +205,35 @@ textarea {
     gap: 50px;
 }
 
+.card {
+  perspective: 1000px;
+}
+.card-Inner {
+  position: relative;
+  width: 100px; height: 100px;
+  transition: 2s;
+  transform-style: preserve-3d;
+  background-color: aliceblue;
+  border: solid;
+  border-radius: 5px;
+}
+.card:hover .card-Inner {
+  transform: rotateY(180deg);
+}
+.cardFront,
+.cardBack {
+    display: flex;
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 9px;
+    border-radius:5px;
+}
 
-.card{
-    border: solid;
-    height: 100px;
-    width: 100px;
+.cardBack {
+  transform: rotateY(180deg);
+  background-color: rgb(108, 108, 178);
 }
